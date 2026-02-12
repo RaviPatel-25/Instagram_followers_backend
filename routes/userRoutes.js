@@ -8,7 +8,7 @@ import {
   deleteUser
 } from "../controllers/userController.js";
 
-import { verifyAdmin } from "./middleware/auth.js";
+import { verifyAdmin } from "../middleware/auth.js";
 
 const router = express.Router();
 
