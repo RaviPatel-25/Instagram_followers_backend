@@ -5,9 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "npm start",
-    "dev" : "nodemon start"
-  },
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
   "author": "ravi",
   "license": "ISC",
   "dependencies": {
