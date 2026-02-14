@@ -14,7 +14,7 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "https://indian-instagram-followers.vercel.app"
-  ]
+  ],
 }));
 
 app.use(express.json());
