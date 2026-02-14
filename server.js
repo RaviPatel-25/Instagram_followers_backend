@@ -8,11 +8,15 @@ dotenv.config();
 
 const app = express();
 
+const cors = require("cors");
+
 app.use(cors({
-  origin: "https://indian-instagram-followers.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  origin: [
+    "http://localhost:5173",
+    "https://indian-instagram-followers.vercel.app"
+  ]
 }));
+
 app.use(express.json());
 
 // Routes
